@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        String nome = "Maria";
+        int idade = 18;
+        String[] produto = {"audi"};
+        double[] produtoValor = {200.70};
+
+        generateInvoice(nome, idade, produto, produtoValor);
+    }
+
+    public static void generateInvoice(String nome, int idade, String[] produto, double[] produtoValor) {
+        System.out.println(nome + " aos " + idade + " anos " );
+        System.out.println("comprou um " + produto[0]);
+        System.out.println("avaliado em R$" +produtoValor[0] + "k");
+    }
+}
