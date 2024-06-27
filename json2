@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+
+        String nome = "Maria";
+        String[] produtos = {"banana", "morango", "abacaxi"};
+        double[] precos = {19.78, 30.00, 10.99};
+
+            printInvoice(nome, produtos, precos);
+    }
+
+     public static void printInvoice(String nome, String[] produtos, double[] precos) {
+                System.out.println(nome);
+    for (int i = 0; i < produtos.length; i++) {
+                System.out.println((i + 1) + ": " + produtos[i] + ", R$" + String.format("%.2f", precos[i]));
+        }
+    }
+}
